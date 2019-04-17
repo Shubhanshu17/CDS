@@ -1,0 +1,54 @@
+{% extends 'parent.html' %}
+
+{% block title %}
+    Child Template
+{% endblock %}
+
+{% block css_path %} 
+
+    {% load static %}
+    <link rel='stylesheet' type='text/css'  href = {% static 'first_form.css' %}>
+
+{% endblock %}
+
+
+{% block body_content %}
+	    
+    <form action='/first_app/django_form2/' method='post'>
+			{% csrf_token %}
+			<table>
+			    {{ f.as_table }}
+			</table>
+			<input type='submit' value="Results">
+			<input type='reset' value="Reset">
+    </form>
+	<form action='' method='post'>
+	  {% csrf_token %}
+		<h2> Your second form is here </h2>
+	  <table>
+		{{ f2.as_table }}
+	  </table>
+			<input type='submit' value="Results">
+			<input type='reset' value="Reset">
+			{% if radio_input %}
+				Answer - {{radio_input}}
+			{% endif %}
+
+	</form>
+
+		{# Show if saving in databas  #}
+		{% if error_time %}
+		    <h4>User Name Already Exists!</h4>
+		{% endif %}
+
+
+		{% if good %}
+		    <h4 id='different'>Successfully Saved Data</h4>
+		{% endif %}
+
+{% endblock %}	
+
+
+
+
+

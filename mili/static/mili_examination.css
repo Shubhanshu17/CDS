@@ -1,0 +1,103 @@
+body{
+  background-image : url('uniform_color2.jpg')
+}
+
+header{
+  background-image : url('fin4.jpg');
+  background-repeat : no-repeat;
+  background-size : 100% 100%;
+}
+
+
+header,footer{
+  background-color : black;
+  text-align : center;
+  width : 100%;
+  line-height : 5px;
+  height : 60px;
+  font-family : courier;
+  color : white;
+  padding : 3px;
+  }
+
+.articleOne{
+  background-image : url('fin1.jpg');
+  background-repeat : no-repeat;
+  border : 6px solid black;
+  border-radius : 10%;
+  margin : 10px auto;
+  line-height : 80px;
+  padding : 10px;
+  width : 80%;
+}
+
+.articleTwo{
+  background-color : black;
+  border-radius : 10%;
+  color : white;
+  margin : 40px;
+  margin-bottom : 80px;
+  font-size : 20px;
+  padding : 10px;
+}
+
+form{
+  padding : 10px;
+  text-align : center;
+}
+
+label{
+  background-color : black;
+  font-family : Arial;
+  color : white;
+}
+
+.errorlist{
+  font-size : 25px;
+  background-color : black;
+  font-family : Impact;
+  line-height : 2px;
+  height : 9px;
+  color : red;
+}
+
+table{
+  margin : auto;
+  text-align : center;
+  font-size : 25px;
+}
+
+select,input{
+  text-align : center;
+  background-color : black;
+  font-size : 25px;
+  font-family : Monospace;
+  color : white;
+}
+
+.button{
+  background-color : grey;
+  color : black;
+  border-radius : 10px;
+}
+
+caption{
+  font-size : 55px;
+}
+
+.attend_exam{
+  font-size : 25px;
+  color : darkgreen;
+}
+
+i{
+  color : yellow;
+}
+
+input:hover{
+  background-color : orange;
+  color : black;
+}
+
+
+

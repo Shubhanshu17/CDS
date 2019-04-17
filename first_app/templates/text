@@ -1,0 +1,3 @@
+../urls.py:    path('form2/',views.first_form_method2),
+
+./first_form.html:		<form action='/first_app/form2/' method='get'>

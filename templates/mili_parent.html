@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		{% block static %}
+
+		    {% load static %}
+	    <link rel='stylesheet' type='text/css' href= {% static 'mili_parent.css' %} >
+
+		{% endblock %}
+	
+		<title>
+
+	    {% block title %}
+			Parent Page
+	    {% endblock %}
+
+	</title></head>
+
+	<body>
+		<header>
+	  {% block header %}
+		  <h3 style='font-size : 40px'>Welcome To Indian Army</h1>
+	  {% endblock %}
+		</header>
+
+		<section>
+
+		  <article class='articleOne' id='articleOneId'>
+			{% block section %}
+			{% endblock %}
+		  </article>
+
+		  <article class='articleTwo' id='articleTwoId'>
+			{% block article %}
+			{% endblock %}
+		  </article>
+
+		</section>
+
+		<footer>
+		  <h3>All Right Are Reserved</h3>
+		  <h3><a href='https://www.indianarmy.com' target='_blank'>www.indianarmy.com</a></h3>
+		</footer>
+
+	</body>
+	</html>
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+{% extends 'mili_parent.html' %}
+
+{% comment %}
+ 
+About this file
+
+{% endcomment %}
+
+
+{% block title %}
+    Exam Result
+{% endblock %}
+
+{% block static %}
+	{% load static %}
+	<link rel='stylesheet' type='text/css' href={% static 'mili_result.css' %}>
+{% endblock %}
+
+{% block header %}
+	<h1>Result Of CSD Exam</h1>
+{% endblock %}
+
+{% block section %}
+	<table class='table1'>
+		<caption>Candidate Info.</caption>
+	  <tr> 
+		<td>Name</td> <td>{{can_list.0.0}}</td>
+	  </tr>
+	  <tr>
+		<td>Roll Number </td><td>{{can_list.1}}</td>
+	  </tr>
+	  <tr>
+		<td>Age</td> <td>{{can_list.2}}</td>
+	  </tr>
+	  <tr>
+		<td>Gender</td><td>{{can_list.3}}</td>
+	  </tr>
+	</table>
+{% endblock %}
+
+{% block article %}
+<hr>
+	<table class='table2'>
+
+		<caption id='positionId'>Result</caption>
+		<tr> 
+			<th>Info.</th>
+			<th>Passing Points</th>
+			<th>You Performed</th>	  
+		</tr>
+	  
+		<tr> 
+		  <td>Chest</td>
+		  <td>77 cm</td>
+		  <td class='{{failure.0}}'>{{can_list.4}} cm</td> 
+		</tr>
+
+		<tr> 
+		  <td>Height</td>
+		  <td>167 cm</td>
+		  <td class='{{failure.1}}'>{{can_list.5}} cm</td>
+		</tr>
+
+		<tr> 
+		  <td>Weight</td>
+		  <td>66 Kg</td>
+		  <td class='{{failure.5}}'>{{can_list.9}} Kg</td>
+		</tr>
+
+
+		<tr> 
+		  <td>Pull Ups</td>
+		  <td>8 times</td>
+		  <td class='{{failure.2}}'>{{can_list.6}} times</td>
+		</tr>
+		
+		<tr> 
+		  <td>Running Time</td>
+		  <td>360 sec</td>
+		  <td class='{{failure.3}}'>{{can_list.7}} sec</td>
+		</tr>
+		
+		<tr> 
+		  <td>Written Test</td>
+		  <td>50 marks</td>
+		  <td class='{{failure.4}}'>{{can_list.8}} marks</td>
+		</tr>
+
+		<tr> 
+		  {% if final_result == 'final_pass'%}
+		  <td colspan=2 class='{{final_result}}dash'>Congratulations,Mr.{{can_list.0.0}},you are <br><b>PASS</b></td>
+		  {% else %}
+		  <td colspan=2 class='{{final_result}}dash'>Sorry Mr.{{can_list.0.0}},you are <br><i>FAIL</i></td>
+		  {% endif %}
+
+		  <td class='{{final_result}}'> in CSD</td>
+		</tr>
+			</table>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+

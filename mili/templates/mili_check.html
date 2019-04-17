@@ -1,0 +1,48 @@
+{% extends 'mili_parent.html' %}
+
+{% block static %}
+    {% load static %}
+    <link rel='stylesheet' type='text/css' href= {% static 'mili_check.css' %}>
+{% endblock %}
+
+{% block title %}
+    Check Form
+{% endblock %}
+
+{% block header %}
+	<h1> CSD Results </h1>
+{% endblock %}
+
+{% block section %}
+
+<form action='/mili/valid_check/#positionId' method='post'>
+	{% csrf_token %}
+	<h1 class='caption'>
+	  Just Type Examination Roll Number<br>Below
+	</h1>
+	<table>
+	    {{check_form.as_table}}
+	</table>
+
+	<input type='submit' value='Verify' class='button'>
+	<input type='reset' value='Reset' class='button'>
+
+</form>
+{% endblock %}
+
+{% block article %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+body{
+  background-image : url('uniform_color.jpg');
+}
+
+header{
+  background-image : url('fin4.jpg');
+  background-repeat : no-repeat;
+  background-size : 100% 100%;
+}
+
+header,footer{
+  background-color : black;
+  text-align : center;
+  width : 100%;
+  line-height : 5px;
+  height : 60px;
+  font-family : courier;
+  color : white;
+  padding : 3px;
+}
+
+.articleOne{
+  background-image : url('finger4.jpg');
+  border-radius : 10%;
+  background-repeat : no-repeat;
+  border : 6px solid black;
+  width : 76%;
+  margin : 10px auto;
+  margin-top : 70px;
+  line-height : 80px;
+  padding : 10px;
+}
+
+.articleTwo{
+  background-color : black;
+  color : white;
+  margin : 40px;
+  font-size : 25px;
+  margin-bottom : 80px;
+  padding : 10px;
+}
+
+form{
+  padding : 10px;
+  text-align : center;
+}
+
+label{
+  background-color : black;
+  font-family : Arial;
+  color : white;
+}
+
+.errorlist{
+  font-size : 25px;
+  background-color : black;
+  font-family : Impact;
+  line-height : 2px;
+  height : 15px;
+  color : red;
+}
+
+table{
+  margin : auto;
+  text-align : center;
+  font-size : 25px;
+}
+
+select,input{
+  text-align : center;
+  background-color : black;
+  font-size : 25px;
+  font-family : Monospace;
+  color : white;
+}
+
+.button{
+  background-color : grey;
+  color : black;
+  border-radius : 10px;
+}
+
+.success{
+  color : white;
+  font-size : 30px;
+  border : 1px solid green;
+}
+
+i{
+  color : yellow;
+  text-decoration : underline;
+}
+
+input:hover{
+  background-color : orange;
+  color : black;
+}
+
+
+
+
+

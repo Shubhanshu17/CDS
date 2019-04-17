@@ -1,0 +1,131 @@
+body{
+  background-image : url('uniform_color2.jpg')
+}
+
+header{
+  margin-bottom : 40px;
+  background-image : url('fin4.jpg');
+  background-repeat : no-repeat;
+  background-size : 100% 100%;
+}
+footer{
+  margin-top : 40px;
+  }
+header,footer{
+  background-color : black;
+  text-align : center;
+  font-family : courier;
+  color : white;
+  line-height : 5px;
+  height : 60px;
+  padding : 3px;
+}
+
+section{
+  border : 1px solid black;
+  background-image : url('fin3.jpg');
+  background-size : 100% 100%;
+  border-radius : 10%;
+}
+
+.articleOne{
+  font-size : 40px;
+  margin : 10px auto;
+  line-height : 30px;
+  padding : 10px;
+}
+
+.articleTwo{
+  color : black;
+  margin : 40px;
+  margin-bottom : 80px;
+  padding : 10px;
+  font-size : 40px;
+}
+
+.table1{
+  margin : auto;
+  text-align : center;
+  font-size : 40px;
+  border-spacing : 10px;
+  width : 60%;
+  line-height : 70px;
+  padding : 10px;
+
+}
+
+.table2{
+  margin : auto;
+  text-align : center;
+  font-size : 35px;
+  width : 100%;
+  border-spacing : 5px;
+  padding : 10px;
+}
+
+th,td{
+  padding : 1px;
+  background-color : black;
+  color : white;
+  border-collapse : collapse;
+}
+
+.pass{
+  background-color : green;
+  font-weight : bold;
+  background-image : url('pass.png');
+  background-size : 15% 100% ;
+  background-repeat : no-repeat; 
+}
+
+.fail{
+  background-color : red;
+  font-weight : bold;
+  text-decoration : line-through;
+  background-image : url('fail.jpeg');
+  background-size : 11% 100% ;
+  background-repeat : no-repeat; 
+
+}
+
+caption{
+  color : brown;
+  font-size : 50px;
+}
+
+.final_pass{
+  background-image : url('pass.png');
+  background-size : 10% 100%;
+  background-repeat : no-repeat; 
+  background-position : right;
+}
+
+.final_fail{
+  background-image : url('fail.jpeg');
+  background-size : 10% 90%;
+  background-repeat : no-repeat; 
+  background-position : right;
+}
+
+.final_faildash{
+  border : 2px solid red;
+}
+
+.final_passdash{
+  border : 3px solid green;
+}
+
+i{
+  color : red;
+}
+
+b{
+  color : green;
+}
+
+
+
+
+
+
+

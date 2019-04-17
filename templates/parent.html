@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		
+{% block css_path %}
+    {% load static %}
+    <link rel='stylesheet' type='text/css'   href= {% static 'parent.css' %}  >
+
+{% endblock %}
+
+
+		<title>
+			{% block title %}
+			Parent Templates
+			{% endblock %}
+
+		</title></head>
+
+	<body>
+		<nav>
+			<p> One Two Three </p> 
+		</nav>
+
+		<section>
+		    {% block body_content %}
+
+		    {% endblock %}
+		</section>
+
+		
+
+		{# Space for random #}
+		
+
+		<hr>
+		
+		
+		<footer>
+		{% block footer %}
+			<p> Fucking Average </p>
+		{% endblock %}
+		<footer/>
+	</body>
+</html>
+

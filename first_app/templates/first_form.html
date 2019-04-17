@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	{% load static %}
+	<link rel='stylesheet' type='text/css' href= {% static 'first_form.css' %}>
+	<head>
+		<title> Non Django Form </title>
+	</head>
+
+	<body>
+		<form action='/first_app/form2/' method='get'>
+			<p>Your Name - <input type='text' name='input_name' value='Please type here'></p>
+			<input type='submit' value='Check'>
+			{% if name %}
+			    <p>Answer - {{name|upper}}</p>
+			{% else %}
+			    <p>Answer - </p>
+
+			{% endif %}
+
+		</form>
+	</body>
+</html>
+

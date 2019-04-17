@@ -1,0 +1,44 @@
+{% extends 'mili_parent.html' %}
+
+{% block static %}
+    {% load static %}
+    <link rel='stylesheet' type='text/css' href= {% static 'mili_registration.css' %}>
+{% endblock %}
+
+{% block title %}
+    Registration Form
+{% endblock %}
+
+{% block header %}
+	<h1>Welcome to Indian Army</h1>
+{% endblock %}
+
+{% block section %}
+<form action='/mili/valid_registration/#articleTwoId' method='post'>
+	{% csrf_token %}
+	<table>
+
+	<h1 style='text-align : center ; font-size : 43px ; font-weight : bold'>Registered Yourself Now!</h1>
+	    {{registration_form.as_table}}
+	</table>
+	<input type='submit' value='Submit' class='button'>
+	<input type='reset' value='Reset' class='button'>
+
+</form>
+{% endblock %}
+
+{% block article %}
+
+{% if roll_number and not exists_in_database %}
+	<div class='success'>
+		<h4> <i>Congratulations!</i> Mr. {{candidate_name}}<br>You are now registered</h4><hr>
+		<h4> Your Examination Roll Number - <i>{{roll_number}}</i></h4>
+		<h4> Exam's Centres Details Will Send To - <i>{{email_id}}</i></h4>
+	</div>
+
+{% else %}
+    <h4> Enter Information With Care! </h4>
+{% endif %}
+
+{% endblock %}
+

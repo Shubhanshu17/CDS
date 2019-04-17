@@ -1,0 +1,91 @@
+body{
+  background-image : url('uniform_color3.jpg');
+  background-size : contain;
+}
+
+header{
+  background-image : url('fin4.jpg');
+  background-repeat : no-repeat;
+  background-size : 100% 100%;
+}
+
+header,footer{
+  background-color : black;
+  text-align : center;
+  font-family : courier;
+  line-height : 10px;
+  color : white; 
+  padding : 3px; 
+}
+
+.articleOne{
+  background-image : url('fin6.jpg');
+  margin : 10px auto;
+  background-size : 100% 100%;
+  background-repeat : no-repeat;
+  border-radius : 60px;
+  border : 2px solid black;
+  width : 70%;
+  line-height : 60px;
+  padding : 10px;
+  margin-bottom : 200px;
+}
+
+
+form{
+  padding : 10px;
+  text-align : center;
+}
+
+label{
+  background-color : black;
+  font-family : Arial;
+  color : white;
+}
+
+.errorlist{
+  font-size : 25px;
+  background-color : black;
+  font-family : Impact;
+  line-height : 18px;
+  width : 370px;
+  color : red;
+}
+
+table{
+  margin : auto;
+  text-align : center;
+  font-size : 25px;
+  border-radius : 50%;
+}
+
+select,input{
+  text-align : center;
+  background-color : black;
+  font-size : 25px;
+  font-family : Monospace;
+  color : white;
+}
+
+.button{
+  background-color : grey;
+  color : black;
+  border-radius : 10px;
+}
+
+.caption{
+  font-weight : bold;
+  font-size : 40px;
+  color : black;
+}
+
+input:hover{
+  background-color : orange;
+  color : black;
+}
+
+
+
+
+
+
